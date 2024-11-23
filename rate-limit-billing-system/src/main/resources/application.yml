@@ -1,0 +1,23 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+  resilience4j.ratelimiter:
+    instances:
+      user1:
+        limitForPeriod: 1000
+        limitRefreshPeriod: 60000
+        timeoutDuration: 100
+      user2:
+        limitForPeriod: 1000
+        limitRefreshPeriod: 60000
+        timeoutDuration: 100
+      user3:
+        limitForPeriod: 1000
+        limitRefreshPeriod: 60000
+        timeoutDuration: 100
+      user4:
+        limitForPeriod: 1000
+        limitRefreshPeriod: 60000
+        timeoutDuration: 100
